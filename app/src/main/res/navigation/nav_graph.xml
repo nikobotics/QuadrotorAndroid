@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/statusFragment">
+
+    <fragment
+        android:id="@+id/commsFragment"
+        android:name="com.example.nikoboticsapp.CommsFragment"
+        android:label="fragment_comms"
+        tools:layout="@layout/fragment_comms" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.nikoboticsapp.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/camFragment"
+        android:name="com.example.nikoboticsapp.CamFragment"
+        android:label="fragment_cam"
+        tools:layout="@layout/fragment_cam" />
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.example.nikoboticsapp.StatusFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" />
+    <action
+        android:id="@+id/action_global_mapFragment"
+        app:destination="@id/mapFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+    <action
+        android:id="@+id/action_global_statusFragment"
+        app:destination="@id/statusFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+    <action
+        android:id="@+id/action_global_camFragment"
+        app:destination="@id/camFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+    <action
+        android:id="@+id/action_global_commsFragment"
+        app:destination="@id/commsFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+</navigation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/statusFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_status" />
+
+    <item
+        android:id="@+id/camFragment"
+        android:icon="@drawable/ic_camera_alt_black_24dp"
+        android:title="@string/title_camera" />
+
+    <item
+        android:id="@+id/mapFragment"
+        android:icon="@drawable/ic_map_black_24dp"
+        android:title="@string/title_map" />
+    <item
+        android:id="@+id/commsFragment"
+        android:icon="@drawable/ic_wifi_tethering_black_24dp"
+        android:title="@string/title_coms"/>
+
+</menu>
